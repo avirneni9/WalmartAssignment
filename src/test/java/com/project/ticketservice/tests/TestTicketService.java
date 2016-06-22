@@ -16,7 +16,7 @@ public class TestTicketService {
 	   public void testOneTicketService() throws InterruptedException {
 	      Optional<Integer> venueLevel=Optional.of(new Integer(3));
 	      int numOfSeats=ticketService.numSeatsAvailable(venueLevel);
-	      assertEquals(18, numOfSeats);
+	      assertEquals(1500, numOfSeats);
 	      String eMailId="test@wipro.com";
 	      SeatHold seatHold=ticketService.findAndHoldSeats(numOfSeats, venueLevel, venueLevel, eMailId);
 	      assertEquals("SUCCESS", seatHold.getMessage());

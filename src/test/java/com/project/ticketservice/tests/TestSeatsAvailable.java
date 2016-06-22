@@ -20,14 +20,14 @@ public class TestSeatsAvailable {
 	   public void testOneSeatsAvailable() {
 	      Optional<Integer> venueLevel=Optional.of(new Integer(1));
 	      int numOfSeats=ticketService.numSeatsAvailable(venueLevel);
-	      assertEquals(2, numOfSeats);
+	      assertEquals(1990, numOfSeats);
 	   }
 	
 	@Test
 	   public void testTwoSeatsAvailable() {
 	      Optional<Integer> venueLevel=Optional.of(new Integer(3));
 	      int numOfSeats=ticketService.numSeatsAvailable(venueLevel);
-	      assertEquals(18, numOfSeats);
+	      assertEquals(1500, numOfSeats);
 	   }
 	
 }

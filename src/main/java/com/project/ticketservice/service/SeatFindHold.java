@@ -93,7 +93,6 @@ public class SeatFindHold {
 							seatHold.setEmailId(customerEmail); //setting mail id
 							seatHold.setMessage("SUCCESS");
 							seatHoldMap.put(seatHold.getSeatHoldId(), seatHold);
-							System.out.println(seatHoldMap.get(seatHold.getSeatHoldId()).getEmailId());
 							//returns SeatHold object
 							return seatHold;
 						}
