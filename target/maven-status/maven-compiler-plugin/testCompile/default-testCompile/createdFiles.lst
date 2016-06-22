@@ -1,0 +1,4 @@
+com\project\ticketservice\tests\TestSeatFindHold.class
+com\project\ticketservice\tests\TestSeatReserve.class
+com\project\ticketservice\tests\TestSeatsAvailable.class
+com\project\ticketservice\tests\TestTicketService.class
