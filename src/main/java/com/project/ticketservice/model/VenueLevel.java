@@ -8,10 +8,10 @@ public class VenueLevel {
 	private static LevelVO[] detailsArray = new LevelVO[4];
 	
 	public VenueLevel() {
-		detailsArray[0] = new Orchestra("1", "Orchestra", 100, 3, 3);
-		detailsArray[1] = new Main("2", "Main", 75, 1, 12);
-		detailsArray[2] = new BalconyOne("3", "Balcony1", 100, 4, 5);
-		detailsArray[3] = new BalconyTwo("4", "Balcony2", 100, 3, 6);
+		detailsArray[0] = new Orchestra("1", "Orchestra", 100, 25, 50);
+		detailsArray[1] = new Main("2", "Main", 75, 20, 100);
+		detailsArray[2] = new BalconyOne("3", "Balcony1", 50, 15, 100);
+		detailsArray[3] = new BalconyTwo("4", "Balcony2", 40, 15, 100);
 	}
 	/**
 	 * Getters and Setters for the variables.
