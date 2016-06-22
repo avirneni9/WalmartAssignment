@@ -3,7 +3,7 @@ package com.project.ticketservice.model;
 import java.util.HashMap;
 import java.util.Map;
 /**
- * @author Avirneni.Lakshman
+ * @author Avirneni.Sai
  * THis is a model object for SeatHold
  * 
  */

@@ -2,7 +2,7 @@ package com.project.ticketservice.model;
 import java.util.Timer;
 import java.util.TimerTask;
 /**
- * @author Avirneni.Lakshman
+ * @author Avirneni.Sai
  * THis is a model object for Seat
  * This class also start the timer to hold the seat for a given time (in Seconds)
  */

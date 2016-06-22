@@ -1,7 +1,7 @@
 package com.project.ticketservice.model;
 
 /**
- * @author Avirneni.Lakshman
+ * @author Avirneni.Sai
  * This is a model object for Row
  */
 public class Row {

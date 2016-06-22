@@ -1,6 +1,6 @@
 package com.project.ticketservice.model;
 /**
- * @author Avirneni.Lakshman
+ * @author Avirneni.Sai
  *This is a Balcony1 level class
  */
 public class BalconyOne extends LevelVO {

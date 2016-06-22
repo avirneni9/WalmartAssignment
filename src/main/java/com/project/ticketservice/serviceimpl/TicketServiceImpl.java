@@ -6,6 +6,10 @@ import com.project.ticketservice.service.SeatFindHold;
 import com.project.ticketservice.service.SeatReserve;
 import com.project.ticketservice.service.SeatsAvailable;
 
+/**
+ * @author Avirneni.Sai
+ * This class implements TicketService interface
+ */
 public class TicketServiceImpl implements TicketService {
 	/**
 	* The number of seats in the requested level that are neither held nor reserved
