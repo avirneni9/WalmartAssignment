@@ -10,7 +10,7 @@ public class TestSeatReserve {
 	private TicketService ticketService = new TicketServiceImpl();
 	@Test
 	   public void testOneSeatReserve() {
-	      int seatHoldId=5001;
+	      int seatHoldId=8001;
 	      String eMailId="test@wipro.com";
 	      String confirmation=ticketService.reserveSeats(seatHoldId,eMailId);
 	      assertEquals("NOSEATS", confirmation);
@@ -24,11 +24,4 @@ public class TestSeatReserve {
 	      assertEquals("NOSEATS", confirmation);
 	   }
 	
-	@Test
-	   public void testThreeSeatReserve() {
-	      int seatHoldId=5001;
-	      String eMailId="test@wipro.com";
-	      String confirmation=ticketService.reserveSeats(seatHoldId,eMailId);
-	      assertEquals("NOSEATS", confirmation);
-	   }
 }

@@ -132,24 +132,27 @@ public class TicketServiceOptions {
 	public void findAndHoldOption() {
 		try{
 		String eMail;
+		int numberOfSeats = 0;
+		int maxLevel=0;
 		int minLevel=this.holdMinLevel();
 		if(minLevel==0){
 			System.out.println("Thank you");
 			System.exit(0);
 		}
-		int maxLevel=this.holdMaxLevel(minLevel);
+		maxLevel=this.holdMaxLevel(minLevel);
 		if(maxLevel==0){
 			System.out.println("Thank you");
 			System.exit(0);
 		}
-		System.out.println("Please enter number of seats:");
-		int numberOfSeats = 0;
+		do{
+		System.out.println("Please enter number of seats (maxmum number of seats to hold is 5):");
 		while (!input.hasNextInt()) 
 		{        
 			input.next(); // Read and discard offending non-int input
 		    System.out.print("Please enter an integer: "); // Re-prompt
 		}
 		numberOfSeats=input.nextInt();
+		}while(numberOfSeats<0 || numberOfSeats>5);
 		do{
 			System.out.println("Please enter valid email address");
 			eMail=input.next();

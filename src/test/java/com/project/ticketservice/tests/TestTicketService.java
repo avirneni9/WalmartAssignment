@@ -18,14 +18,11 @@ public class TestTicketService {
 	      int numOfSeats=ticketService.numSeatsAvailable(venueLevel);
 	      assertEquals(1500, numOfSeats);
 	      String eMailId="test@wipro.com";
-	      SeatHold seatHold=ticketService.findAndHoldSeats(numOfSeats, venueLevel, venueLevel, eMailId);
+	      SeatHold seatHold=ticketService.findAndHoldSeats(5, venueLevel, venueLevel, eMailId);
 	      assertEquals("SUCCESS", seatHold.getMessage());
 	      Thread.sleep(100000);
 	      String confirmation=ticketService.reserveSeats(seatHold.getSeatHoldId(),eMailId);
-	      assertEquals("NOSEATS", confirmation);
-	      seatHold=ticketService.findAndHoldSeats(numOfSeats, venueLevel, venueLevel, eMailId);
-	      assertEquals("SUCCESS", seatHold.getMessage());
-	      
+	      assertEquals("NOSEATS", confirmation); 
 	      
 	   }
 }
