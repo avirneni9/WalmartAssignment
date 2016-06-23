@@ -26,7 +26,7 @@ public class TicketServiceOptions {
 			while (!input.hasNextInt()) 
 			{        
 				input.next(); // Read and discard offending non-int input
-			    System.out.print("Please enter an integer: "); // Re-prompt
+			    System.out.print("Please enter a valid input(number)"); // Re-prompt
 			}
 			userInput=input.nextInt();
 		}while(userInput<0 || userInput>3);
@@ -43,7 +43,7 @@ public class TicketServiceOptions {
 			while (!input.hasNextInt()) 
 			{        
 				input.next(); // Read and discard offending non-int input
-			    System.out.print("Please enter an integer: "); // Re-prompt
+			    System.out.print("Please enter valid input(number) "); // Re-prompt
 			}
 			userInput=input.nextInt();
 		}while(userInput<1 || userInput>4);
@@ -62,7 +62,7 @@ public class TicketServiceOptions {
 			while (!input.hasNextInt()) 
 			{        
 				input.next(); // Read and discard offending non-int input
-			    System.out.print("Please enter an integer: "); // Re-prompt
+			    System.out.print("Please enter valid input(number) "); // Re-prompt
 			}
 			minLevel=input.nextInt();
 		}while(minLevel<0 || minLevel>4);
@@ -81,7 +81,7 @@ public class TicketServiceOptions {
 			while (!input.hasNextInt()) 
 			{        
 				input.next(); // Read and discard offending non-int input
-			    System.out.print("Please enter an integer: "); // Re-prompt
+			    System.out.print("Please enter valid input(number) "); // Re-prompt
 			}
 			maxLevel=input.nextInt();
 		}while((maxLevel<0 || maxLevel>4) || (maxLevel<minLevel));
@@ -101,7 +101,7 @@ public class TicketServiceOptions {
 		while (!input.hasNextInt()) 
 		{        
 			input.next(); // Read and discard offending non-int input
-		    System.out.print("Please enter an integer: "); // Re-prompt
+		    System.out.print("Please enter valid input(number) "); // Re-prompt
 		}
 		seatHoldId=input.nextInt();
 		do{
@@ -113,6 +113,7 @@ public class TicketServiceOptions {
 		if(confirmationCode.equals("NOSEATS")){
 			System.out.println("No Seats found with the details provided");
 		}else{
+		System.out.println("Reserved Successfully");
 		System.out.println("confirmationCode : " + confirmationCode);
 		}
 		}catch(InputMismatchException ex){
@@ -149,7 +150,7 @@ public class TicketServiceOptions {
 		while (!input.hasNextInt()) 
 		{        
 			input.next(); // Read and discard offending non-int input
-		    System.out.print("Please enter an integer: "); // Re-prompt
+		    System.out.print("Please enter valid input(number) "); // Re-prompt
 		}
 		numberOfSeats=input.nextInt();
 		}while(numberOfSeats<1 || numberOfSeats>5);
@@ -163,7 +164,8 @@ public class TicketServiceOptions {
 							TicketServiceUtil.optionalConverter(maxLevel), 
 							eMail);
 		if(!seatHold.getMessage().equals("NOSEATS")){
-		System.out.println(" Hold Id : " + seatHold.getSeatHoldId());
+		System.out.println("Hold successfully (Seats will be hold only for a minute)");
+		System.out.println("Seat Hold Id : " + seatHold.getSeatHoldId());
 		}
 		else{
 			System.out.println("No Available seats for your choice");
