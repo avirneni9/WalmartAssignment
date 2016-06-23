@@ -59,6 +59,7 @@ public class SeatFindHold {
 							{
 								if(totalReserverdSeats==numberOfSeats){
 									//if number of seats hold equal to number of seats required to hold
+									reservedSeats.put(String.valueOf(row.getRowId()), strReserverdSeats);
 									seatHold.setLevelId(Integer.parseInt(genericVO.getLevelId()));
 									seatHold.setSeatHoldId(seatHold.getSequenceId()); //setting seathold Id
 									seatHold.setEmailId(customerEmail); //setting mail id

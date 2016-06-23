@@ -152,7 +152,7 @@ public class TicketServiceOptions {
 		    System.out.print("Please enter an integer: "); // Re-prompt
 		}
 		numberOfSeats=input.nextInt();
-		}while(numberOfSeats<0 || numberOfSeats>5);
+		}while(numberOfSeats<1 || numberOfSeats>5);
 		do{
 			System.out.println("Please enter valid email address");
 			eMail=input.next();

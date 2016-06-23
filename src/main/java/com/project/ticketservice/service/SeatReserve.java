@@ -50,7 +50,7 @@ public class SeatReserve {
 	 * @param customerEmail
 	 * @return confirmation code
 	 */
-	@SuppressWarnings("rawtypes")
+	
 	public static String reserveSeats(int seatHoldId, String customerEmail)
 	{
 		String errorMessage; //error message to store to display

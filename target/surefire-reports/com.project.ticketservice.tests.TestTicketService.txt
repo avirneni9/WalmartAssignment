@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.project.ticketservice.tests.TestTicketService
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 99.994 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 99.938 sec
